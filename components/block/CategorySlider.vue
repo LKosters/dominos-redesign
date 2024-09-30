@@ -1,12 +1,20 @@
 <template>
   <div class="py-10">
-    <div class="container">
-      <h2 class="text-2xl font-black mb-5">
-        Waar heb je zin in?
-      </h2>
+    <div>
+      <div class="container">
+        <h2 class="text-2xl font-black mb-5">
+          Waar heb je zin in?
+        </h2>
+      </div>
       <div ref="container" class="keen-slider">
         <div v-for="(category, index) in categories" class="keen-slider__slide" :class="'number-slide' + index">
-
+          <NuxtLink class="p-3 w-full h-full bg-white rounded-[10px] shadow-md block group" :to="category.title">
+            <NuxtImg class="w-full h-[180px] object-cover rounded-[10px]" :src="category.thumbnail"/>
+            <div class="flex items-center pt-3">
+              <h3 class="font-bold mr-3">{{ category.title }}</h3>
+              <ArrowRightIcon class="size-4 stroke-2 duration-300 group-hover:translate-x-1"/>
+            </div>
+          </NuxtLink>
         </div>
       </div>
     </div>
@@ -14,7 +22,8 @@
 </template>
 
 <script setup lang="ts">
-import { useKeenSlider } from 'keen-slider/vue.es'
+import { ArrowRightIcon } from '@heroicons/vue/24/outline';
+import { useKeenSlider } from 'keen-slider/vue.es';
 
 const categories = ref([
   {
@@ -56,3 +65,10 @@ const [container] = useKeenSlider({
   },
 });
 </script>
+
+<style scoped>
+.keen-slider__slide:first-child {
+  margin-left: calc((100vw - 1024px) / 2);
+  padding-left: 2rem;
+}
+</style>
