@@ -1,7 +1,12 @@
 <template>
   <div>
     <UiHeader/>
-    <slot/>
-    <UiFooter/>
+    <div class="bg-dominoLightGray">
+      <slot/>
+      <UiFooter/>
+    </div>
   </div>
 </template>
+
+<script setup lang="ts">
+</script>

@@ -7,6 +7,7 @@ export default {
         dominoRed: '#b12418',
         dominoGray: '#333333',
         dominoWhite: '#ffffff',
+        dominoLightGray: '#F5F5F5',
         dominoGreen: '#67ad5b',
         dominoOrange: '#f19e38',
         dominoBlue: '#2151c5',
@@ -17,6 +18,10 @@ export default {
       container: {
         center: true,
         padding: '2rem',
+      },
+      backgroundImage: {
+        'top-divider': "url('/top-divider.svg')",
+        'bottom-divider': "url('/bottom-divider.svg')",
       },
     },
   },

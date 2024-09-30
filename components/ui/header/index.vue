@@ -1,5 +1,5 @@
 <template>
-  <div class="py-6 shadow-bottom sticky top-0">
+  <div class="py-6 shadow-bottom sticky top-0 bg-dominoWhite z-10">
     <div class="container flex justify-between">
       <div>
         Logo
