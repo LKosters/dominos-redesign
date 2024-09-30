@@ -31,7 +31,7 @@ const categories = ref([
     title: "Bijgerechten",
     thumbnail: '/stock-pizza.png',
     url: '/',
-  }
+  },
   {
     title: "Drankjes",
     thumbnail: '/stock-pizza.png',
