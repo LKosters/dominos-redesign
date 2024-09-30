@@ -1,6 +1,6 @@
 <template>
   <div>
-    Hello World
+    <BlockHero/>
   </div>
 </template>
 
