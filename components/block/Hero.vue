@@ -1,5 +1,5 @@
 <template>
-  <div class="py-20">
+  <div class="py-24">
     <div class="container">
       <h2 class="text-xl font-bold text-dominoBlue">
         Vanavond lekker domino’s
