@@ -9,7 +9,9 @@
       <div ref="container" class="keen-slider">
         <div v-for="(category, index) in categories" class="keen-slider__slide" :class="'number-slide' + index">
           <NuxtLink class="p-3 w-full h-full bg-white rounded-[10px] block group" :to="category.url">
-            <NuxtImg class="w-full h-[180px] object-cover rounded-[10px]" :src="category.thumbnail"/>
+            <div class="overflow-hidden relative rounded-[10px]">
+              <NuxtImg class="w-full h-[180px] object-cover rounded-[10px] duration-300 group-hover:scale-110" :src="category.thumbnail"/>
+            </div>
             <div class="flex items-center pt-3">
               <h3 class="font-bold mr-3">{{ category.title }}</h3>
               <ArrowRightIcon class="size-4 stroke-2 duration-300 group-hover:translate-x-1"/>
