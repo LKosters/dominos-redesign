@@ -1,16 +1,14 @@
 <template>
   <div class="h-screen">
-    <div class="card">
-      <div class="upper-card">
-        <h3>Titel</h3>
+    <div class="parent">
+      <div class="div1">
+        Lorem Ipsum
       </div>
-      <div class="bottom-card">
-        <div class="button-card">
-          Knop
-        </div>
-        <div class="image-card">
-          Afbeelding
-        </div>
+      <div class="div2">
+        Button
+      </div>
+      <div class="div3">
+        Afbeelding
       </div>
     </div>
   </div>
@@ -18,35 +16,20 @@
 </template>
 
 <style scoped>
-.card {
-  background: #00dc82;
+.parent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
   height: 250px;
   width: 250px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  background-image: url("/blob.png");
+  background-size: contain;
+
 }
 
-.upper-card {
-  padding-left: 20px;
-  padding-top: 40px;
-}
-
-.bottom-card {
-  display: flex;
-  justify-content: space-between;
-}
-
-.button-card {
-  padding-left: 20px;
-}
-
-.image-card {
-  height: 100px;
-  width: 100px;
-  background-color: #0047e1;
-}
+.div1 { grid-area: 1 / 1 / 2 / 3; padding-left: 30px; padding-top: 40px}
+.div2 { grid-area: 2 / 1 / 3 / 2; display: flex; justify-content: center; align-items: center; }
+.div3 { grid-area: 2 / 2 / 3 / 3; background-color: #00dc82; }
 </style>
-<script setup lang="ts">
-</script>

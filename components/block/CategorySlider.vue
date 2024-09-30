@@ -1,5 +1,5 @@
 <template>
-  <div class="py-14">
+  <div class="py-14 relative pb-40">
     <div>
       <div class="container">
         <h2 class="text-2xl font-black mb-5">
@@ -20,6 +20,7 @@
         </div>
       </div>
     </div>
+    <div class="bg-bottom-divider bg-no-repeat bg-cover w-full h-32 absolute bottom-0"></div>
   </div>
 </template>
 

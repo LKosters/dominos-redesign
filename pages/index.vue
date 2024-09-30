@@ -2,6 +2,9 @@
   <div>
     <BlockHero/>
     <BlockCategorySlider/>
+    <BlockPopulairPizzas/>
+    <BlockAiReccomendations/>
+    <BlockAllPizzas/>
   </div>
 </template>
 

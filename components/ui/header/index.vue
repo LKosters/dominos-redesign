@@ -1,10 +1,10 @@
 <template>
   <UiHeaderTopbar/>
-  <div :class="{'shadow-bottom !py-4' : scrollY > 30}" class="py-6 sticky top-0 bg-dominoWhite z-10 duration-300">
+  <div :class="{'shadow-bottom !py-3' : scrollY > 30}" class="py-5 sticky top-0 bg-dominoWhite z-10 duration-300">
     <div class="container flex justify-between items-center">
       <div>
         <NuxtLink class="group" to="/">
-          <NuxtImg class="size-10 duration-300 group-hover:rotate-12" src="/logo.svg"/>
+          <NuxtImg class="size-14 duration-300 group-hover:rotate-12" src="/logo.svg"/>
         </NuxtLink>
       </div>
       <ul class="flex items-center">
