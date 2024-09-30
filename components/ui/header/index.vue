@@ -1,8 +1,8 @@
 <template>
   <div class="py-6 shadow-bottom sticky top-0 bg-dominoWhite z-10">
-    <div class="container flex justify-between">
+    <div class="container flex justify-between items-center">
       <div>
-        Logo
+        <NuxtImg class="size-10" src="/logo.svg"/>
       </div>
       <ul class="flex">
         <li class="ml-6" v-for="navItem in navItems">

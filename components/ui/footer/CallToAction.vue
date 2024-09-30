@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-dominoRed py-60 relative">
+  <div class="bg-dominoRed py-48 relative">
     <div class="container">
       <h2 class="text-dominoWhite text-4xl font-black mb-5">
         Probeer ook is een dessert
