@@ -16,6 +16,7 @@
     "vue-router": "^4.2.5"
   },
   "dependencies": {
-    "@heroicons/vue": "^2.1.5"
+    "@heroicons/vue": "^2.1.5",
+    "keen-slider": "^6.8.6"
   }
 }
