@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="mb-10 lg:mb-0">
     <h3 class="text-xl font-black mb-5">{{ column.title }}</h3>
     <ul>
       <li class="mb-2" v-for="navItem in column.navItems">

@@ -1,6 +1,6 @@
 <template>
   <div class="bg-dominoRed py-48 relative">
-    <div class="container flex justify-center items-center gap-40">
+    <div class="container flex justify-center lg:items-center gap-10 lg:gap-40 lg:flex-row flex-col">
       <div>
         <h2 class="text-dominoWhite text-4xl font-black mb-5">
           Probeer ook is een dessert

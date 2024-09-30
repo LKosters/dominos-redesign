@@ -1,6 +1,6 @@
 <template>
   <NuxtLink
-      class="px-5 py-3 block w-max rounded-[10px] font-bold"
+      class="px-5 py-3 block w-max rounded-[10px] font-bold duration-300 hover:-translate-y-0.5"
       :class="[
           {'bg-dominoWhite' : variant === 'secondary'},
           {'bg-dominoGreen text-white': variant === 'cta'}
