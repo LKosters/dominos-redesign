@@ -17,5 +17,5 @@ import { ChevronRightIcon } from '@heroicons/vue/24/outline'
 
 const props = defineProps({
   column: Object,
-})
+});
 </script>

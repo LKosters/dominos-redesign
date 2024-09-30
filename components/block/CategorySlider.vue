@@ -1,5 +1,5 @@
 <template>
-  <div class="py-10">
+  <div class="py-14">
     <div>
       <div class="container">
         <h2 class="text-2xl font-black mb-5">
@@ -8,7 +8,7 @@
       </div>
       <div ref="container" class="keen-slider">
         <div v-for="(category, index) in categories" class="keen-slider__slide" :class="'number-slide' + index">
-          <NuxtLink class="p-3 w-full h-full bg-white rounded-[10px] shadow-md block group" :to="category.title">
+          <NuxtLink class="p-3 w-full h-full bg-white rounded-[10px] block group" :to="category.url">
             <NuxtImg class="w-full h-[180px] object-cover rounded-[10px]" :src="category.thumbnail"/>
             <div class="flex items-center pt-3">
               <h3 class="font-bold mr-3">{{ category.title }}</h3>

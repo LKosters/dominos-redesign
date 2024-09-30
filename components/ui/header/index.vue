@@ -4,11 +4,16 @@
       <div>
         <NuxtImg class="size-10" src="/logo.svg"/>
       </div>
-      <ul class="flex">
+      <ul class="flex items-center">
         <li class="ml-6" v-for="navItem in navItems">
           <NuxtLink :to="navItem.url">
             {{ navItem.text }}
           </NuxtLink>
+        </li>
+        <li class="ml-6">
+          <UiButton variant="cta" url="/">
+            Aanbiedingen
+          </UiButton>
         </li>
       </ul>
     </div>
