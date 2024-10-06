@@ -19,5 +19,6 @@
     <div class="bg-bottom-divider bg-no-repeat bg-cover w-full h-32 absolute bottom-0"></div>
   </div>
 </template>
+
 <script setup lang="ts">
 </script>
