@@ -17,11 +17,14 @@
       </UiButton>
     </div>
     <div class="hidden lg:block">
-      <BlockDetailPageExtras/>
+      <BlockDetailPageExtras :extras="extras"/>
     </div>
   </div>
 </template>
 <script setup lang="ts">
-const options = ref(['Medium 25cm', 'Large 29cm', 'Huge 34cm']);
-const quantity = ref(['1', '2', '3', '4', '5']);
+const props = defineProps({
+  options: Array,
+  quantity: Array,
+  extras: Object,
+});
 </script>
