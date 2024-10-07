@@ -4,8 +4,8 @@
       <h2 class="text-2xl font-black mb-5">
         Alle pizza's
       </h2>
-      <div class="columns-4 gap-5">
-        <div class="mb-2" v-for="(product, index) in 20">
+      <div class="columns-2 lg:columns-4 gap-5">
+        <div class="mb-4 lg:mb-2" v-for="(product, index) in 20">
           <NuxtLink class="p-3 w-full bg-dominoWhite rounded-[10px] shadow-md block group h-max" to="/">
             <NuxtImg class="w-full h-[180px] object-cover rounded-[10px]" src="/stock-pizza.png"/>
             <div class="pt-3">

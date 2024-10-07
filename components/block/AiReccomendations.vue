@@ -9,7 +9,7 @@
           Misschien vind je dit ook lekker
         </h2>
       </div>
-      <div ref="container" class="keen-slider">
+      <div ref="container" class="keen-slider container">
         <div v-for="(product, index) in 15" class="keen-slider__slide" :class="'number-slide' + index">
           <NuxtLink class="p-3 w-full bg-dominoWhite rounded-[10px] shadow-md block group h-max" to="/">
             <NuxtImg class="w-full h-[180px] object-cover rounded-[10px]" src="/stock-pizza.png"/>
@@ -40,16 +40,19 @@
 import {useKeenSlider} from "keen-slider/vue.es";
 
 const [container] = useKeenSlider({
-  slides: {
-    perView: 5.5,
-    spacing: 30,
+  breakpoints: {
+    '(min-width: 0px)': {
+      slides: {
+        perView: 2.5,
+        spacing: 30,
+      },
+    },
+    '(min-width: 992px)': {
+      slides: {
+        perView: 4.5,
+        spacing: 30,
+      },
+    },
   },
 });
 </script>
-
-<style scoped>
-.keen-slider__slide:first-child {
-  margin-left: calc((100vw - 1024px) / 2);
-  padding-left: 2rem;
-}
-</style>
