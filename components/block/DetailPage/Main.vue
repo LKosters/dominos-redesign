@@ -2,6 +2,10 @@
   <div class="mt-10">
     <h1 class="font-black text-3xl lg:text-5xl mb-5">Pizza Shoarma</h1>
     <p class="font-black mb-5">€ 14,99</p>
+    <p class="mb-5 hidden lg:flex items-center font-bold">
+      <GlobeEuropeAfricaIcon class="size-6 stroke-2 mr-2 text-dominoGreen"/>
+      Met het bestellen van deze pizza worden 2 bomen geplant!
+    </p>
     <p class="hidden lg:block lg:w-[600px] mb-5">
       Lorem ipsum odor amet, consectetuer adipiscing elit. Mollis imperdiet massa faucibus lacinia nibh justo. Litora ultricies imperdiet sodales vitae mollis eu habitasse montes.
     </p>
@@ -22,6 +26,8 @@
   </div>
 </template>
 <script setup lang="ts">
+import { GlobeEuropeAfricaIcon } from '@heroicons/vue/24/outline';
+
 const props = defineProps({
   options: Array,
   quantity: Array,
