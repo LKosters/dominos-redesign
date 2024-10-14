@@ -10,7 +10,7 @@
         </p>
       </div>
       <div>
-        <UiButton variant="secondary" url="/">
+        <UiButton variant="secondary" url="/desserts">
           Bekijk desserts
         </UiButton>
       </div>
