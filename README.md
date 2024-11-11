@@ -1,34 +1,14 @@
-# Nuxt Example
+# Domino's redesign
 
-Deploy your [Nuxt](https://nuxt.com) project to Vercel with zero configuration.
+You can also view the website on https://redesign.laurenskosters.nl/
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/vercel/tree/main/examples/nuxtjs&template=nuxtjs)
-
-_Live Example: https://nuxtjs-template.vercel.app_
-
-Look at the [Nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
-
-## Setup
-
-Make sure to install the dependencies:
+## Start project
 
 ```bash
-# yarn
-yarn
-
-# npm
 npm install
 
-# pnpm
-pnpm install --shamefully-hoist
-```
-
-## Development Server
-
-Start the development server on http://localhost:3000
-
-```bash
 npm run dev
+# Development server will start on http://localhost:3000
 ```
 
 ## Production
@@ -44,5 +24,3 @@ Locally preview production build:
 ```bash
 npm run preview
 ```
-
-Checkout the [deployment documentation](https://nuxt.com/docs/getting-started/deployment#presets) for more information.
